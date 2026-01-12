@@ -225,4 +225,137 @@ console.log(checkDayOfWeek(2));  // "Вівторок"
 console.log(checkDayOfWeek(3));  // "Середа"
 console.log(checkDayOfWeek(8));  // "Невідомий день"
 
+// Задача-51
+// Напишіть функцію, яка приймає один параметр continent. 
+// Використовуючи switch, поверніть назву континенту або "Невідомий континент" в залежності від введеного значення. 
+// Наприклад, "Africa", "Europe", "Asia", "North America", "South America", "Antarctica", "Australia" - відомі континенти, інші випадки - "Невідомий континент".
 
+function checkContinent(continent) {
+    switch (continent) {
+        case "Africa":
+            return "Африка";
+        case "Europe":
+            return "Європа";
+        case "Asia":
+            return "Азія";
+        case "North America":
+            return "Північна Америка";
+        case "South America":
+            return "Південна Америка";
+        case "Antarctica":
+            return "Антарктида";
+        case "Australia":
+            return "Австралія";
+        default:
+            return "Невідомий континент";
+    }
+}   
+// Приклади виклику функції:
+console.log(checkContinent("Africa"));          // "Африка"
+console.log(checkContinent("Europe"));          // "Європа"
+console.log(checkContinent("Unknown Continent")); // "Невідомий континент"
+
+// console.log(true && 3); // 3
+
+// console.log(false && 3); // false
+
+// console.log(true && 4 && 'kiwi'); // "kiwi"
+
+// console.log(true && 0 && 'kiwi'); //0
+
+// console.log(true || 3); //true
+
+// console.log(true || 3 || 4); //true
+
+// console.log(true || false || 7); //true
+
+// console.log(null || 2 || undefined); //2
+
+// console.log((1 && null && 2) > 0); //false
+
+// console.log(null || (2 && 3) || 4); //3
+
+// console.log(1 && 5); //5
+// console.log(5 && 1); //1
+// console.log(0 && 2); //0
+// console.log(2 && 0); //0
+// console.log('' && 'Mango'); //''
+// console.log('Mango' && ''); //''
+// console.log('Mango' && 'Poly'); //'Poly'
+// console.log('Poly' && 'Mango'); //'Mango'
+
+// console.log(true || false);
+// console.log(false || true);
+// console.log(true || true);
+
+// console.log(3 || false);
+// console.log(false || 3);
+// console.log(3 || true);
+// console.log(true || 3);
+
+// console.log(!true); //false
+// console.log(!false); //true
+// console.log(!3); //false
+// console.log(!'Mango'); //false
+// console.log(!0); //true
+// console.log(!''); //true
+
+const isOnline = true;
+const isNotOnline = !isOnline;
+console.log(true && false); // false
+console.log(false && true); //false
+console.log(true && true); //true
+console.log(false && false); //false
+
+console.log(true || false);
+console.log(false || true);
+console.log(true || true);
+console.log(false || false);
+
+console.log(!true);
+console.log(!false);
+console.log(!!true);
+console.log(!!false);
+
+console.log(1 === 1 && 2 === 2);
+console.log(1 === 2 && 2 === 2);
+console.log(1 === 1 || 2 === 2);
+console.log(1 === 2 || 2 === 2);
+
+console.log(1 > 2 && 2 < 3);
+console.log(1 < 2 && 2 < 3);
+console.log(1 > 2 || 2 < 3);
+console.log(1 < 2 || 2 < 3);
+
+console.log(0 && 3);
+console.log(3 && 0);
+console.log(0 || 3);
+console.log(3 || 0);
+
+console.log('' || 'apple');
+console.log('orange' || '');
+console.log('' && 'banana');
+console.log('grape' && '');
+
+console.log(0 || false);
+console.log(false || 0);
+console.log(1 && 'cherry');
+console.log('banana' && 1);
+console.log(null && 'pear');
+console.log('peach' && undefined);
+console.log(undefined || 'plum');
+console.log('melon' || null);
+console.log(undefined && false);
+console.log(true || 'watermelon');
+console.log('watermelon' || true);
+console.log(false && 'pineapple');
+console.log('pineapple' && false);
+console.log(NaN || 'kiwi');
+console.log('kiwi' || NaN);
+console.log(NaN && 'mango');
+console.log('mango' && NaN);
+console.log(Infinity || 'apricot');
+console.log('apricot' || Infinity);
+console.log(Infinity && 'blueberry');
+console.log('blueberry' && Infinity);
+console.log(null || undefined);

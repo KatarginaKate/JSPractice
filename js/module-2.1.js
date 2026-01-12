@@ -302,29 +302,29 @@ console.log(checkContinent("Unknown Continent")); // "Невідомий кон�
 
 const isOnline = true;
 const isNotOnline = !isOnline;
-console.log(true && false); // false
-console.log(false && true); //false
-console.log(true && true); //true
-console.log(false && false); //false
+// console.log(true && false); // false
+// console.log(false && true); //false
+// console.log(true && true); //true
+// console.log(false && false); //false
 
-console.log(true || false);
-console.log(false || true);
-console.log(true || true);
-console.log(false || false);
+// console.log(true || false); //true
+// console.log(false || true); //true
+// console.log(true || true); //true
+// console.log(false || false); //false
 
-console.log(!true);
-console.log(!false);
-console.log(!!true);
-console.log(!!false);
+// console.log(!true); //false
+// console.log(!false); //true
+// console.log(!!true); //true
+// console.log(!!false); //false
 
-console.log(1 === 1 && 2 === 2);
-console.log(1 === 2 && 2 === 2);
-console.log(1 === 1 || 2 === 2);
-console.log(1 === 2 || 2 === 2);
+// console.log(1 === 1 && 2 === 2); //true
+// console.log(1 === 2 && 2 === 2); //false
+// console.log(1 === 1 || 2 === 2); //true
+// console.log(1 === 2 || 2 === 2); //true
 
-console.log(1 > 2 && 2 < 3);
-console.log(1 < 2 && 2 < 3);
-console.log(1 > 2 || 2 < 3);
+console.log(1 > 2 && 2 < 3); //false
+console.log(1 < 2 && 2 < 3); //true
+console.log(1 > 2 || 2 < 3); //
 console.log(1 < 2 || 2 < 3);
 
 console.log(0 && 3);
